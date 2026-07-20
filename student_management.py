@@ -1,4 +1,4 @@
-students=[]
+#students=[]
 while True:
   print("....Student Management System....")
   print("\n1. Add Student")
@@ -14,12 +14,23 @@ while True:
       "Roll No":roll,
       "Branch":branch
     }
-    student.append(student)
+    students.append(student)
     print("Students added successfully")
   elif choice==2:
-    print("view Student feature will bw added soon")
+    print("Students View")
+    print("-"*20)
+    if (len(students)==0):
+      print("There are no student details here")
+    else:
+            print("\nStudent Records")
+            for student in students:
+                print("---------------------------")
+                print("Name   :", student["Name"])
+                print("Roll   :", student["Roll"])
+                print("Branch :", student["Branch"])
   elif choice==3:
     print("Thank you")
+    break
   else:
     print("Invalid choice")
     
