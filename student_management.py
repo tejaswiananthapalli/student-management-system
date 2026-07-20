@@ -9,6 +9,13 @@ while True:
     name=input("Enter student's name: ")
     roll=input("Enter roll number: ")
     branch=input("Enter branch: ")
+    student={
+      "Name":name,
+      "Roll No":roll,
+      "Branch":branch
+    }
+    student.append(student)
+    print("Students added successfully")
   elif choice==2:
     print("view Student feature will bw added soon")
   elif choice==3:
